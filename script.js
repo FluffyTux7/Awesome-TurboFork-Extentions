@@ -93,16 +93,20 @@ function copy(text) {
     };
 }
 
-document.getElementById('searchButton')?.addEventListener('click', function() {
-    const text = document.getElementById('search')?.value
+document.getElementById('searchButton')?.addEventListener('click', search(document.getElementById('search')?.value))
+document.addEventListener('keypress', function(e) {
+    if (e.key === "Enter") search(document.getElementById('search')?.value)
+})
+
+function search(query) {
     const array = []
 
     for (const x of json) {
-        if (x.name.includes(text)) {
+        if (x.name.toLowerCase().includes(query)) {
             array.push(x)
         }
     }
 
     outer.innerHTML = ""
     create(array)
-})
+}
