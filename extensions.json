@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Animated Text",
+        "picture": "https://extensions.turbowarp.org/images/lab/text.svg",
+        "description": "An easy way to display and animate text. Compatible with Scratch Lab's Animated Text experiment.",
+        "url": "https://extensions.turbowarp.org/lab/text.js"
+    },
+    {
+        "name": "Stretch",
+        "picture": "https://extensions.turbowarp.org/images/stretch.svg",
+        "description": "Stretch sprites horizontally or vertically.",
+        "url": "https://extensions.turbowarp.org/stretch.js"
+    },
+    {
+        "name": "Gamepad",
+        "picture": "https://extensions.turbowarp.org/images/gamepad.svg",
+        "description": "Directly access gamepads instead of just mapping buttons to keys.",
+        "url": "https://extensions.turbowarp.org/gamepad.js"
+    },
+    {
+        "name": "Box2D Physics",
+        "picture": "https://extensions.turbowarp.org/images/box2d.svg",
+        "description": "Two dimensional physics.",
+        "url": "https://extensions.turbowarp.org/box2d.js",
+        "credits": [
+            {
+                "name": "griffpatch",
+                "url": "https://scratch.mit.edu/users/griffpatch/"
+            }
+        ]
+    },
+    {
+        "name": "Files",
+        "picture": "https://extensions.turbowarp.org/images/files.svg",
+        "description": "Read and download files.",
+        "url": "https://extensions.turbowarp.org/files.js"
+    },
+    {
+        "name": "Pointerlock",
+        "picture": "https://extensions.turbowarp.org/images/pointerlock.png",
+        "description": "Adds blocks for mouse locking. Mouse x & y blocks will report the change since the previous frame while the pointer is locked. Replaces the pointerlock experiment.",
+        "url": "https://extensions.turbowarp.org/pointerlock.js"
+    },
+    {
+        "name": "Mouse Cursor",
+        "picture": "https://extensions.turbowarp.org/images/cursor.png",
+        "description": "Use custom cursors or hide the cursor. Also allows replacing the cursor with any costume image.",
+        "url": "https://extensions.turbowarp.org/cursor.js"
+    }
+]
