@@ -12,13 +12,13 @@ document.querySelectorAll('.extension').forEach(ext => {
     description,
   	url
   };
-  const users = Array.from(ext.querySelectorAll('a:not(.open):not(.sample):not(.docs)'));
+  const users = Array.from(ext.querySelectorAll('a:not(.open):not(.sample):not(.docs):not(.sample-list-item)'));
   if (users.length > 0) {
   	extension.credits = [];
     for (const user of users) {
 			extension.credits.push({
 				name: user.textContent,
-        link: user.href ?? '#'
+        url: user.href ?? '#'
 			});
 		}
   }
