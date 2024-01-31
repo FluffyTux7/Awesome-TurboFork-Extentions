@@ -50,7 +50,7 @@ async function create(array) {
             var index = 0
             for (const element of x.credits) {
                 const a = document.createElement('a')
-                a.href = element.url
+                if (element.url) a.href = element.url
                 a.innerText = element.name
                 if (index > 0) {
                     // Add " and " text node
