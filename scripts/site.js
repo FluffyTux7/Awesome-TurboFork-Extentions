@@ -1,15 +1,27 @@
 const outer = document.querySelectorAll('.extensions')[0]
+var current = "tw"
+var currentArray = []
 
-const json = await fetch("./extensions.json")
-.then(response => {
-    if (!response.ok) {
-        throw new Error('Network response was not ok');
-    }
-    return response.json();
-})
+const jsons = {
+    "tw": await fetchJson("./jsons/tw.json"),
+    "pm": await fetchJson("./jsons/pm.json"),
+    "all": await (async () => {
+        const tw = await fetchJson("./jsons/tw.json");
+        const pm = await fetchJson("./jsons/pm.json");
+        return tw.concat(pm);
+    })(),
+}
+
+async function fetchJson(url) {
+    const json  = await fetch(url)
+    return await json.json()
+}
 
 async function create(array) {
-    for (const x of array ?? json) {
+    currentArray = []
+    for (const x of array ?? jsons[current]) {
+        if (currentArray.includes(x.name)) return;
+
         const body = document.createElement('div')
         body.classList = "extension"
         outer.appendChild(body)
@@ -82,6 +94,8 @@ async function create(array) {
                 });
         })
 
+        currentArray.push(x.name)
+
     }
 }
 
@@ -93,16 +107,40 @@ function copy(text) {
     };
 }
 
-document.getElementById('searchButton')?.addEventListener('click', search(document.getElementById('search')?.value))
+document.getElementById('searchButton')?.addEventListener('click', function() {
+    search(document.getElementById('search')?.value)
+})
 document.addEventListener('keypress', function(e) {
     if (e.key === "Enter") search(document.getElementById('search')?.value)
+})
+
+
+document.getElementById('turbowarp')?.addEventListener('click', function() {
+    current = "tw"
+
+    outer.innerHTML = ""
+    create()
+})
+
+document.getElementById('penguinmod')?.addEventListener('click', function() {
+    current = "pm"
+
+    outer.innerHTML = ""
+    create()
+})
+
+document.getElementById('all')?.addEventListener('click', function() {
+    current = "all"
+
+    outer.innerHTML = ""
+    create()
 })
 
 function search(query) {
     const array = []
 
-    for (const x of json) {
-        if (x.name.toLowerCase().includes(query)) {
+    for (const x of jsons[current]) {
+        if (x.name.toLowerCase().includes(query.toLowerCase())) {
             array.push(x)
         }
     }
