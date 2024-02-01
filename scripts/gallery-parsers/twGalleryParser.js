@@ -1,37 +1,37 @@
 // https://github.com/Ashimee
 // for usage on: https://extensions.turbowarp.org/
 var exts = [];
-document.querySelectorAll('.extension').forEach(ext => {
-  const name = ext.querySelector('h2').textContent;
-  const descP = ext.querySelector('p');
-  const description = descP.textContent.replace(/( (.{1,30}) by (.+)(\.))/gm, '').trim();
-  const imgUri = ext.querySelector('.extension-image').src;
-  const url = ext.querySelector('button.copy').dataset.copy;
-  const extension = {
-    name,
-    picture: imgUri,
-    description,
-  	url
-  };
-  const users = Array.from(ext.querySelectorAll('a:not(.open):not(.sample):not(.docs):not(.sample-list-item)'));
-  if (users.length > 0) {
-  	extension.credits = [];
-    for (const user of users) {
-			extension.credits.push({
-				name: user.textContent,
-        url: user.href ?? '#'
-			});
-		}
-  }
-  exts.push(extension);
+document.querySelectorAll('.extension').forEach((ext) => {
+    const name = ext.querySelector('h2').textContent;
+    const descP = ext.querySelector('p');
+    const description = descP.textContent.replace(/( (.{1,30}) by (.+)(\.))/gm, '').trim();
+    const imgUri = ext.querySelector('.extension-image').src;
+    const url = ext.querySelector('button.copy').dataset.copy;
+    const extension = {
+        name,
+        picture: imgUri,
+        description,
+        url,
+    };
+    const users = Array.from(ext.querySelectorAll('a:not(.open):not(.sample):not(.docs):not(.sample-list-item)'));
+    if (users.length > 0) {
+        extension.credits = [];
+        for (const user of users) {
+            extension.credits.push({
+                name: user.textContent,
+                url: user.href ?? '#',
+            });
+        }
+    }
+    exts.push(extension);
 });
-var getExt = (name) => exts.find(ext => ext.name === name);
+var getExt = (name) => exts.find((ext) => ext.name === name);
 function forceCred(name, uname, link) {
-  const ext = getExt(name);
-  ext.credits = ext.credits ?? [];
-  const credit = {name: uname};
-  if (!!link) credit.link = link;
-  ext.credits.push(credit);
+    const ext = getExt(name);
+    ext.credits = ext.credits ?? [];
+    const credit = { name: uname };
+    if (!!link) credit.link = link;
+    ext.credits.push(credit);
 }
 forceCred('BigInt', 'Skyhigh173');
 forceCred('HTML Encode', 'ClaytonTDM');
