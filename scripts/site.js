@@ -1,5 +1,5 @@
 const outer = document.querySelectorAll('.extensions')[0];
-var current = 'tw';
+var current = 'all';
 var currentArray = [];
 
 const galleries = ['tw', 'pm'],
