@@ -1,4 +1,5 @@
 // https://github.com/Ashimee
+// for usage on: https://extensions.turbowarp.org/
 var exts = [];
 document.querySelectorAll('.extension').forEach(ext => {
   const name = ext.querySelector('h2').textContent;
