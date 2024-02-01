@@ -39,11 +39,11 @@ async function create(array) {
         buttonBody.appendChild(buttonWrapper);
 
         const button = document.createElement('a');
-        button.innerText = 'copy link';
+        button.innerText = 'Copy Link';
         buttonWrapper.appendChild(button);
 
         const code = document.createElement('a');
-        code.innerText = 'copy code';
+        code.innerText = 'Copy Code';
         buttonWrapper.appendChild(code);
 
         const name = document.createElement('span');
