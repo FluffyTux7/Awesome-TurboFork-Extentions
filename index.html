@@ -11,7 +11,18 @@
 <body>
 
     <div class="searchWrapper">
+        <div class="left">
+            <button class="leftButton" id="faqButton" title="faq"><img src="./images/question.svg" alt="faq"></button>
+        </div>
+
         <input type="text" name="search" id="search">
+        <div class="filter">
+            <select id="searchFor" name="Filter">
+                <option value="name">Name</option>
+                <option value="username">Username</option>
+            </select>
+            <img class="arrow" src="./images/arrow.svg">
+        </div>
         <button id="searchButton"><img src="./images/search.svg" alt="search" title="search"></button>
 
         <div class="right">
@@ -26,5 +37,22 @@
 
         </div>
     </div>
+
+    <dialog id="faqModal">
+        <span id="closeFaq">X</span>
+
+        <h1>What is UEG?</h1>
+        <p>UEG aims to have an all in one library to simplify finding extensions.</p>
+        <br>
+
+        <h1>How do i have my extension added?</h1>
+        <p>Message @callumjt on discord with your github repo of all your extensions (WE WILL NOT HOST YOUR SB3'S OR THUMBNAILS, YOU MUST PROVIDE IT YOURSELF).</p>
+        <br>
+
+        <h1>How do i get my extensions removed?</h1>
+        <p>Message @callumjt on discord to request to have your extensions taken of here.</p>
+        <br>
+        
+    </dialog>
 </body>
 </html>

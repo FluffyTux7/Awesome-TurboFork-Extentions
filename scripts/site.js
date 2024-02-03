@@ -136,14 +136,32 @@ document.getElementById('all')?.addEventListener('click', function () {
 });
 
 function search(query) {
+    const filter = document.getElementById('searchFor')
     const array = [];
 
     for (const x of jsons[current]) {
-        if (x.name.toLowerCase().includes(query.toLowerCase())) {
-            array.push(x);
+        if (filter.value == "name") {
+            if (x.name.toLowerCase().includes(query.toLowerCase())) {
+                array.push(x);
+            }
+        } else if (x.credits && filter.value == "username") {
+            for (const y of x.credits) {
+                if (y.name.toLowerCase().includes(query.toLowerCase())) {
+                    array.push(x)
+                }
+            }
         }
     }
 
     outer.innerHTML = '';
     create(array);
 }
+
+const modal = document.getElementById('faqModal')
+document.getElementById('faqButton').addEventListener('click', function() {
+    modal.showModal();
+})
+
+document.getElementById('closeFaq').addEventListener('click', function() {
+    modal.close();
+})
