@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Legacy Blocks",
+        "picture": "https://raw.githubusercontent.com/KyleKart/ScratchExtensions/gh-pages/get/banners/legacy.svg",
+        "description": "Recreations of old blocks from early and beta versions of Scratch.",
+        "url": "https://raw.githubusercontent.com/KyleKart/ScratchExtensions/gh-pages/get/legacy.js"
+    },
+    {
+        "name": "Pitchano",
+        "picture": "https://raw.githubusercontent.com/KyleKart/ScratchExtensions/gh-pages/get/banners/pitchano.svg",
+        "description": "Converts piano notes to pitch numbers.",
+        "url": "https://raw.githubusercontent.com/KyleKart/ScratchExtensions/gh-pages/get/pitchano.js"
+    }
+]

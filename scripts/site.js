@@ -2,15 +2,28 @@ const outer = document.querySelectorAll('.extensions')[0];
 var current = 'all';
 var currentArray = [];
 
-const galleries = ['tw', 'pm'],
+const galleries = ['tw', 'pm', 'ruby', 'elmobear'],
     jsons = {
         all: [],
     };
+
+createDropdown("all")
 
 for (const galleryName of galleries) {
     const galleryJson = await fetchJson(`./jsons/${galleryName}.json`);
     jsons[galleryName] = galleryJson;
     jsons.all = jsons.all.concat(galleryJson);
+    console.log(jsons.all)
+
+    createDropdown(galleryName)
+}
+
+async function createDropdown(galleryName) {
+    const dropdown = document.createElement('option');
+    dropdown.innerText = galleryName;
+    dropdown.value = galleryName;
+
+    document.getElementById('galleryButtons').appendChild(dropdown)
 }
 
 async function fetchJson(url) {
@@ -19,6 +32,7 @@ async function fetchJson(url) {
 }
 
 async function create(array) {
+    var index = 0;
     currentArray = [];
     for (const x of array ?? jsons[current]) {
         if (currentArray.includes(x.name)) return;
@@ -32,6 +46,7 @@ async function create(array) {
 
         const img = document.createElement('img');
         img.src = x.picture;
+        img.loading = "lazy"
         buttonBody.appendChild(img);
 
         const buttonWrapper = document.createElement('div');
@@ -114,26 +129,11 @@ document.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') search(document.getElementById('search')?.value);
 });
 
-document.getElementById('turbowarp')?.addEventListener('click', function () {
-    current = 'tw';
-
-    outer.innerHTML = '';
+document.getElementById('galleryButtons')?.addEventListener('change', function(e) {
+    current = document.getElementById('galleryButtons')?.value;
+    outer.innerHTML = "";
     create();
-});
-
-document.getElementById('penguinmod')?.addEventListener('click', function () {
-    current = 'pm';
-
-    outer.innerHTML = '';
-    create();
-});
-
-document.getElementById('all')?.addEventListener('click', function () {
-    current = 'all';
-
-    outer.innerHTML = '';
-    create();
-});
+})
 
 function search(query) {
     const filter = document.getElementById('searchFor')
