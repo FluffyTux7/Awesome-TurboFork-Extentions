@@ -1,5 +1,4 @@
 const outer = document.querySelectorAll('.extensions')[0];
-var current = 'all';
 var currentArray = [];
 
 const galleries = ['tw', 'pm', 'ruby', 'elmobear'],
@@ -13,10 +12,13 @@ for (const galleryName of galleries) {
     const galleryJson = await fetchJson(`./jsons/${galleryName}.json`);
     jsons[galleryName] = galleryJson;
     jsons.all = jsons.all.concat(galleryJson);
-    console.log(jsons.all)
 
     createDropdown(galleryName)
 }
+
+const hash = window.location.hash?.split('#')[1]
+var current = jsons[hash] ? hash : 'all';
+if (current != "all") document.getElementById('galleryButtons').value = current
 
 async function createDropdown(galleryName) {
     const dropdown = document.createElement('option');
