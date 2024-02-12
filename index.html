@@ -12,12 +12,12 @@
 
     <div class="searchWrapper">
         <div class="left">
-            <button class="leftButton" id="faqButton" title="faq"><img src="./images/question.svg" alt="faq"></button>
+            <button class="leftButton button" id="faqButton" title="faq"><img src="./images/question.svg" alt="faq"></button>
         </div>
 
         <input type="text" name="search" id="search">
         <div class="filter">
-            <select id="searchFor" name="Filter">
+            <select id="searchFor" name="Filter" class="dropdown">
                 <option value="name">Name</option>
                 <option value="username">Username</option>
             </select>
@@ -26,16 +26,28 @@
         <button id="searchButton"><img src="./images/search.svg" alt="search" title="search"></button>
 
         <div class="right">
+
             <div class="rightButtons">
-                <select id="galleryButtons" name="Gallerys">
-                </select>
-                <img class="arrow" src="./images/arrow.svg">
+                <button class="button rightButton" id="rightButton">Category</button>
+
+                <dialog class="modal" id="userModal" style="padding-top: 50px;">
+                    <div class="userSearchWrapper">
+                        <input type="text" name="userSearch" id="userSearch" class="userSearch" placeholder="Search">
+                        <button id="userSearchButton"><img src="./images/search.svg" alt="search" title="search"></button>
+                    </div>
+                    <span id="closeUser" class="closeModal">X</span>
+
+                    <div class="userExtensions" id="userExtensions">
+
+                    </div>
+                </dialog>
             </div>
+
         </div>
     </div>
 
     <div class="extension-out">
-        <div class="extensions">
+        <div class="extensions" id="outer">
 
         </div>
     </div>
@@ -56,5 +68,15 @@
         <br>
         
     </dialog>
+
+    <div class="footer">
+        <h1>Ultimate Extension Gallery</h1>
+        
+        <div class="links">
+            <a href="https://discord.gg/3xK9GjSQKS">Discord</a>
+            <a href="https://github.com/callumjt/ultimate-extension-gallery">GitHub</a>
+        </div>
+    </div>
+
 </body>
 </html>

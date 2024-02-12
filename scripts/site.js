@@ -1,12 +1,25 @@
-const outer = document.querySelectorAll('.extensions')[0];
+const getElement = (id) => {
+    return document.getElementById(id) ?? console.error(`${id} was not found, please report this bug.`)
+}
+
+const objects = {
+    outer: getElement('outer'),
+    user: getElement('rightButton'),
+    userModal: getElement('userModal'),
+    closeUser: getElement('closeUser'),
+    userExtensions: getElement('userExtensions'),
+    searchButton: getElement('searchButton'),
+    searchField: getElement('search'),
+
+    userField: getElement('userSearch'),
+    userButton: getElement('userSearchButton'),
+}
 var currentArray = [];
 
-const galleries = ['tw', 'pm', 'ruby', 'elmobear'],
+const galleries = ['tw', 'pm', 'ruby', 'elmobear', 'mistium'],
     jsons = {
         all: [],
     };
-
-createDropdown("all")
 
 for (const galleryName of galleries) {
     const galleryJson = await fetchJson(`./jsons/${galleryName}.json`);
@@ -16,16 +29,46 @@ for (const galleryName of galleries) {
     createDropdown(galleryName)
 }
 
+createDropdown("all")
+
 const hash = window.location.hash?.split('#')[1]
 var current = jsons[hash] ? hash : 'all';
-if (current != "all") document.getElementById('galleryButtons').value = current
+if (current != "all") objects.user.value = current
+objects.searchField.setAttribute('placeholder', current)
 
 async function createDropdown(galleryName) {
-    const dropdown = document.createElement('option');
-    dropdown.innerText = galleryName;
-    dropdown.value = galleryName;
 
-    document.getElementById('galleryButtons').appendChild(dropdown)
+    const div = document.createElement('div');
+    div.classList = "userTopBar";
+    if (galleryName != "all") {
+        objects.userExtensions.appendChild(div);
+    } else {
+        const first = objects.userExtensions.firstChild;
+
+        objects.userExtensions.insertBefore(div, first)
+    }
+
+    const name = document.createElement('span');
+    name.innerText = galleryName;
+    div.appendChild(name)
+
+    const amount = document.createElement('span');
+    amount.innerText = jsons[galleryName].length + " extensions"
+    div.appendChild(amount)
+
+    userClick(div, galleryName)
+
+}
+
+function userClick(element, name) {
+    element.addEventListener('click', function() {
+        current = name;
+        objects.searchField.setAttribute('placeholder', current)
+        objects.outer.innerHTML = ""
+        create()
+
+        objects.userModal.close()
+    })
 }
 
 async function fetchJson(url) {
@@ -41,7 +84,7 @@ async function create(array) {
 
         const body = document.createElement('div');
         body.classList = 'extension';
-        outer.appendChild(body);
+        objects.outer.appendChild(body);
 
         const buttonBody = document.createElement('div');
         body.appendChild(buttonBody);
@@ -124,18 +167,15 @@ function copy(text) {
     };
 }
 
-document.getElementById('searchButton')?.addEventListener('click', function () {
-    search(document.getElementById('search')?.value);
+objects.searchButton?.addEventListener('click', function () {
+    search(objects.searchField?.value);
 });
 document.addEventListener('keypress', function (e) {
-    if (e.key === 'Enter') search(document.getElementById('search')?.value);
+    if (e.key === 'Enter') search(objects.searchField?.value);
 });
 
-document.getElementById('galleryButtons')?.addEventListener('change', function(e) {
-    current = document.getElementById('galleryButtons')?.value;
-    outer.innerHTML = "";
-    create();
-})
+objects.user?.addEventListener('click', function() {objects.userModal.showModal()})
+objects.closeUser?.addEventListener('click', function() {objects.userModal.close()})
 
 function search(query) {
     const filter = document.getElementById('searchFor')
@@ -155,9 +195,23 @@ function search(query) {
         }
     }
 
-    outer.innerHTML = '';
+    objects.outer.innerHTML = '';
     create(array);
 }
+
+
+function searchUser() {
+    objects.userExtensions.innerHTML = ""
+    for (let key in jsons) {
+        if (key.toLowerCase().includes(objects.userField.value.toLowerCase())) {
+            createDropdown(key)
+        }
+    }
+}
+
+objects.userButton.addEventListener('click', function() {
+    searchUser()
+})
 
 const modal = document.getElementById('faqModal')
 document.getElementById('faqButton').addEventListener('click', function() {
