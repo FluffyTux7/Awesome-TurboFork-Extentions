@@ -2,7 +2,7 @@
     {
         "name": "Key History",
         "description":"Store a list of previously pressed keys. Made primarily for use in originOS (github.com/Mistium/Origin-OS)",
-        "url": "https://github.com/Mistium/Origin-OS/blob/main/Extensions/KeyHistory.js",
+        "url": "https://raw.githubusercontent.com/Mistium/Origin-OS/main/Extensions/KeyHistory.js",
         "picture": "https://raw.githubusercontent.com/Mistium/Origin-OS/main/Extensions/keylogger.png",
         "credits": [
             {
@@ -14,7 +14,7 @@
     {
         "name": "Iframe Plus",
         "description": "Display as many iframes over the stage as you want and manage them individually",
-        "url": "https://github.com/Mistium/Origin-OS/blob/main/Extensions/iframeplus.js",
+        "url": "https://raw.githubusercontent.com/Mistium/Origin-OS/main/Extensions/iframeplus.js",
         "picture": "https://raw.githubusercontent.com/Mistium/Origin-OS/main/Extensions/Iframeplus.png",
         "credits": [
             {
