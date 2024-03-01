@@ -13,7 +13,7 @@
     },
     {
         "name": "Theme Colour",
-        "picture": "https://raw.githubusercontent.com/KyleKart/ScratchExtensions/blob/gh-pages/get/banners/theme-color.svg",
+        "picture": "https://raw.githubusercontent.com/KyleKart/ScratchExtensions/gh-pages/get/banners/theme-color.svg",
         "description": "Extension for setting the theme of your browser! it doesn't work normally with most browsers... but should work in PWAs. Tested with Vivaldi which has a theme setting that does work with this.",
         "url": "https://raw.githubusercontent/KyleKart/ScratchExtensions/gh-pages/get/theme-color.js"
     }
