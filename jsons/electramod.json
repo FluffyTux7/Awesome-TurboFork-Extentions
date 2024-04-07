@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Jul Mik Utilities",
+        "picture": "https://electramod-extensions-gallery.vercel.app/images/julmik6478/julmik_utilities.svg",
+        "description": "An Extension of Blocks Utilities by Jul Mik (V1 and V2 when named Jul Mik Blocks with Turbobuilder) and helped by Aness6040 (Actual v3)",
+        "url": "https://electramod-extensions-gallery.vercel.app/extensions/julmik6478/julmik_utilities.js",
+        "credits": [
+            {
+                "name": "julmik6478.",
+                "url": "https://scratch.mit.edu/users/julmik6478/"
+            }
+        ]
+    },
+    {
+        "name": "CloudLink",
+        "picture": "https://electramod-extensions-gallery.vercel.app/images/MikeDev101/cloudlink.svg",
+        "description": "A powerful WebSocket extension for Scratch. Allows for online connectivity to servers for things like multiplayer.",
+        "url": "https://electramod-extensions-gallery.vercel.app/extensions/MikeDev101/cloudlink.js",
+        "credits": [
+            {
+                "name": "MikeDev101.",
+                "url": "https://github.com/MikeDev101/"
+            }
+        ]
+    },
+    {
+        "name": "PenguinGPT",
+        "picture": "https://electramod-extensions-gallery.vercel.app/images/MubiLop/penguingpt.png",
+        "description": "Talk to ChatGPT! Use models like DALL-E 3, Midjourney, and GPT 4.",
+        "url": "https://electramod-extensions-gallery.vercel.app/extensions/MubiLop/penguingpt.js",
+        "credits": [
+            {
+                "name": "MubiLop.",
+                "url": "https://scratch.mit.edu/users/MubiLop/"
+            }
+        ]
+    },
+    {
+        "name": "PenguinHook",
+        "picture": "https://electramod-extensions-gallery.vercel.app/images/MubiLop/penguinhook.png",
+        "description": "Send Webhook requests, that can be Discord or any type of webhook.",
+        "url": "https://electramod-extensions-gallery.vercel.app/extensions/MubiLop/penguinhook.js",
+        "credits": [
+            {
+                "name": "MubiLop.",
+                "url": "https://scratch.mit.edu/users/MubiLop/"
+            }
+        ]
+    },
+    {
+        "name": "TurboWeather",
+        "picture": "https://electramod-extensions-gallery.vercel.app/images/RubyDevs/turboweather.webp",
+        "description": "Show weather and location data for any place in our world. Data that could be used for doxxing is deleted from results.",
+        "url": "https://electramod-extensions-gallery.vercel.app/extensions/RubyDevs/turboweather.js",
+        "credits": [
+            {
+                "name": "RubyDevs.",
+                "url": "https://scratch.mit.edu/users/RubyDevs/"
+            }
+        ]
+    }
+]

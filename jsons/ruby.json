@@ -1,9 +1,27 @@
 [
     {
-        "name": "1mbShortener",
-        "picture": "https://ruby-devs.vercel.app/cdn/thumbnails/1mb.svg",
-        "description": "Using 1mb Api you can now share links without it being long!",
-        "url": "https://ruby-devs.vercel.app/cdn/extensions/1mb.js"
+        "name": "Poop Extension",
+        "picture": "https://ruby-devs.vercel.app/cdn/thumbnails/poop.png",
+        "description": "The most useful, amazing, and well done extension, made by the most cool person ever! (ddededodediamante)",
+        "url": "https://ruby-devs.vercel.app/cdn/extensions/poop.js"
+    },
+    {
+        "name": "Mewing Utils",
+        "picture": "https://ruby-devs.vercel.app/cdn/thumbnails/mewingUtils.png",
+        "description": "Wanted to mew easily? Mewing Utils is here!",
+        "url": "https://ruby-devs.vercel.app/cdn/extensions/mewingUtils.js"
+    },
+    {
+        "name": "Joe",
+        "picture": "https://ruby-devs.vercel.app/cdn/thumbnails/Joe.png",
+        "description": "Joe",
+        "url": "https://ruby-devs.vercel.app/cdn/extensions/Joe.js"
+    },
+    {
+        "name": "ToastNotifs",
+        "picture": "https://ruby-devs.vercel.app/cdn/thumbnails/toastnotifs.png",
+        "description": "Wanted to make an notification system in your project but you couldn't make it work? Toast Notifs is here! (add unsandboxed)",
+        "url": "https://ruby-devs.vercel.app/cdn/extensions/toastnotifs.js"
     },
     {
         "name": "PenguinGPT",
@@ -12,22 +30,16 @@
         "url": "https://ruby-devs.vercel.app/cdn/extensions/penguingpt.js"
     },
     {
-        "name": "PenguinPedia",
-        "picture": "https://ruby-devs.vercel.app/cdn/thumbnails/penguinpedia.webp",
-        "description": "Get a lot of data from Wikipedia, like definitions and images!",
-        "url": "https://ruby-devs.vercel.app/cdn/extensions/penguinpedia.js"
-    },
-    {
-        "name": "Ruby Maps",
-        "picture": "https://ruby-devs.vercel.app/cdn/thumbnails/rubymaps.svg",
-        "description": "An extension that lets you integrate the power of maps into your projects!",
-        "url": "https://ruby-devs.vercel.app/cdn/extensions/rubymaps.js"
-    },
-    {
         "name": "Analytics",
         "picture": "https://ruby-devs.vercel.app/cdn/thumbnails/analytics.webp",
         "description": "See Analytics about your project, using our sophisticated web tools.",
         "url": "https://ruby-devs.vercel.app/cdn/extensions/analytics.js"
+    },
+    {
+        "name": "1mbShortener",
+        "picture": "https://ruby-devs.vercel.app/cdn/thumbnails/1mb.svg",
+        "description": "Using 1mb Api you can now share links without it being long!",
+        "url": "https://ruby-devs.vercel.app/cdn/extensions/1mb.js"
     },
     {
         "name": "GoFile",
@@ -42,6 +54,12 @@
         "url": "https://ruby-devs.vercel.app/cdn/extensions/geminiai.js"
     },
     {
+        "name": "PenguinPedia",
+        "picture": "https://ruby-devs.vercel.app/cdn/thumbnails/penguinpedia.webp",
+        "description": "Get a lot of data from Wikipedia, like definitions and images!",
+        "url": "https://ruby-devs.vercel.app/cdn/extensions/penguinpedia.js"
+    },
+    {
         "name": "Speech2Text",
         "picture": "https://ruby-devs.vercel.app/cdn/thumbnails/speechtotext.png",
         "description": "Recognizes words or sentences said into the microphone. Experimental, can be innacurate sometimes.",
@@ -52,6 +70,12 @@
         "picture": "https://ruby-devs.vercel.app/cdn/thumbnails/penguinhook.png",
         "description": "Send Webhook requests, that can be Discord or any type of webhook.",
         "url": "https://ruby-devs.vercel.app/cdn/extensions/penguinhook.js"
+    },
+    {
+        "name": "Ruby Maps",
+        "picture": "https://ruby-devs.vercel.app/cdn/thumbnails/rubymaps.svg",
+        "description": "An extension that lets you integrate the power of maps into your projects!",
+        "url": "https://ruby-devs.vercel.app/cdn/extensions/rubymaps.js"
     },
     {
         "name": "TurboWeather",

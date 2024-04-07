@@ -13,10 +13,11 @@ const objects = {
 
     userField: getElement('userSearch'),
     userButton: getElement('userSearchButton'),
+    copyBanner: getElement('copyBanner')
 }
 var currentArray = [];
 
-const galleries = ['tw', 'pm', 'ruby', 'elmobear', 'mistium'],
+const galleries = ['tw', 'pm', 'ruby', 'elmobear', 'mistium', 'electramod'],
     jsons = {
         all: [],
     };
@@ -137,7 +138,10 @@ async function create(array) {
             body.appendChild(text);
         }
 
-        button.addEventListener('click', copy(x.url));
+        button.addEventListener('click', function () {
+            copy(x.url)
+            copyBanner()
+        });
         code.addEventListener('click', function () {
             fetch(x.url)
                 .then((response) => {
@@ -149,11 +153,18 @@ async function create(array) {
                 .then((text) => {
                     // Copy the content to the clipboard
                     navigator.clipboard.writeText(text);
+                    copyBanner()
                 })
                 .catch((error) => {
                     console.error('Error fetching or copying JS file:', error);
                 });
         });
+
+        async function copyBanner() {
+            objects.copyBanner.style.opacity = 1;
+            await delay(1500)
+            objects.copyBanner.style.opacity = 0
+        }
 
         currentArray.push(x.name);
     }
@@ -221,3 +232,4 @@ document.getElementById('faqButton').addEventListener('click', function() {
 document.getElementById('closeFaq').addEventListener('click', function() {
     modal.close();
 })
+const delay = ms => new Promise(res => setTimeout(res, ms));

@@ -1,25 +1,37 @@
 [
     {
-        "name": "Pause Utilities",
-        "picture": "https://extensions.penguinmod.com/images/SharkPool/Pause-Utilities.svg",
-        "description": "Utilities for (Un)Pausing Scripts, Sprites, and Projects. Can Run Code When Project Paused as Well",
-        "url": "https://extensions.penguinmod.com/extensions/SharkPool/Pause-Utilities.js",
+        "name": "CloudLink",
+        "picture": "https://extensions.penguinmod.com/images/MikeDev101/cloudlink.svg",
+        "description": "A powerful WebSocket extension for Scratch. Allows for online connectivity to servers for things like multiplayer.",
+        "url": "https://extensions.penguinmod.com/extensions/MikeDev101/cloudlink.js",
         "credits": [
             {
-                "name": "SharkPool-SP.",
-                "url": "https://github.com/SharkPool-SP/"
+                "name": "MikeDev101.",
+                "url": "https://github.com/MikeDev101/"
             }
         ]
     },
     {
-        "name": "TurboWeather",
-        "picture": "https://extensions.penguinmod.com/images/RubyDevs/turboweather.webp",
-        "description": "Show weather and location data for any place in our world. Data that could be used for doxxing is deleted from results.",
-        "url": "https://extensions.penguinmod.com/extensions/RubyDevs/turboweather.js",
+        "name": "Pen+",
+        "picture": "https://extensions.penguinmod.com/images/ObviousAlexC/PenPlus.svg",
+        "description": "Extended pen section! Adds blocks for drawing triangles using textures and tints, drawing images and editing their pixels, etc.",
+        "url": "https://extensions.penguinmod.com/extensions/ObviousAlexC/PenPlus.js",
         "credits": [
             {
-                "name": "RubyDevs.",
-                "url": "https://scratch.mit.edu/users/RubyDevs/"
+                "name": "pinksheep2917.",
+                "url": "https://scratch.mit.edu/users/pinksheep2917/"
+            }
+        ]
+    },
+    {
+        "name": "Boxed Physics",
+        "picture": "https://extensions.penguinmod.com/images/pooiod/B2Dimg.svg",
+        "description": "Implements the Box2D physics engine into PenguinMod, adding joints, springs, etc. This is different from TurboWarp's implementation.",
+        "url": "https://extensions.penguinmod.com/extensions/pooiod/Box2D.js",
+        "credits": [
+            {
+                "name": "pooiod7.",
+                "url": "https://scratch.mit.edu/users/pooiod7/"
             }
         ]
     },
@@ -32,18 +44,6 @@
             {
                 "name": "skyhigh173.",
                 "url": "https://github.com/skyhigh173/"
-            }
-        ]
-    },
-    {
-        "name": "Pen+",
-        "picture": "https://extensions.penguinmod.com/images/ObviousAlexC/PenPlus.svg",
-        "description": "Extended pen section!",
-        "url": "https://extensions.penguinmod.com/extensions/ObviousAlexC/PenPlus.js",
-        "credits": [
-            {
-                "name": "pinksheep2917.",
-                "url": "https://scratch.mit.edu/users/pinksheep2917/"
             }
         ]
     },
@@ -62,7 +62,7 @@
     {
         "name": "Sprite Effects",
         "picture": "https://extensions.penguinmod.com/images/SharkPool/Sprite-Effects.svg",
-        "description": "Apply New Non-Vanilla Effects to Sprites and the Canvas!",
+        "description": "Apply new non-vanilla effects to sprites and the screen as a whole!",
         "url": "https://extensions.penguinmod.com/extensions/SharkPool/Sprite-Effects.js",
         "credits": [
             {
@@ -72,9 +72,33 @@
         ]
     },
     {
+        "name": "Scope Variable",
+        "picture": "https://extensions.penguinmod.com/images/0znzw/ScopeVars.png",
+        "description": "Manage your variables in a block-like structure.",
+        "url": "https://extensions.penguinmod.com/extensions/0znzw/ScopeVars.js",
+        "credits": [
+            {
+                "name": "Ashimee.",
+                "url": "https://github.com/Ashimee/"
+            }
+        ]
+    },
+    {
+        "name": "More Types",
+        "picture": "https://extensions.penguinmod.com/images/VeryGoodScratcher42/More-Types.png",
+        "description": "Adds more value types to PenguinMod, implementing Functions, Objects, Arrays, Sets, Maps, Symbols and Nothing.",
+        "url": "https://extensions.penguinmod.com/extensions/VeryGoodScratcher42/More-Types.js",
+        "credits": [
+            {
+                "name": "VeryGoodScratcher42.",
+                "url": "https://scratch.mit.edu/users/VeryGoodScratcher42/"
+            }
+        ]
+    },
+    {
         "name": "Variables Expanded",
         "picture": "https://extensions.penguinmod.com/images/SharkPool/Variables-Expanded.svg",
-        "description": "New Variable blocks and New Display Monitor types.\n(some contributions by DogeIsCut)",
+        "description": "New variable blocks and new display monitor types.\n(some contributions by DogeIsCut)",
         "url": "https://extensions.penguinmod.com/extensions/SharkPool/Variables-Expanded.js",
         "credits": [
             {
@@ -86,7 +110,7 @@
     {
         "name": "Sty-Lists",
         "picture": "https://extensions.penguinmod.com/images/SharkPool/Sty-Lists.svg",
-        "description": "Customize and Organize Lists Monitors.",
+        "description": "Customize and organize list monitors.",
         "url": "https://extensions.penguinmod.com/extensions/SharkPool/Sty-Lists.js",
         "credits": [
             {
@@ -98,20 +122,8 @@
     {
         "name": "Display Text",
         "picture": "https://extensions.penguinmod.com/images/SharkPool/Display-Text.svg",
-        "description": "Display Advanced Text in Your Projects!",
+        "description": "An extremely customizable text engine for your projects. Assign text elements to IDs and customize every little setting about them.",
         "url": "https://extensions.penguinmod.com/extensions/SharkPool/Display-Text.js",
-        "credits": [
-            {
-                "name": "SharkPool-SP.",
-                "url": "https://github.com/SharkPool-SP/"
-            }
-        ]
-    },
-    {
-        "name": "Better Input",
-        "picture": "https://extensions.penguinmod.com/images/SharkPool/BetterInput.svg",
-        "description": "Expansion to the Ask and Wait blocks.",
-        "url": "https://extensions.penguinmod.com/extensions/SharkPool/BetterInput.js",
         "credits": [
             {
                 "name": "SharkPool-SP.",
@@ -132,6 +144,42 @@
         ]
     },
     {
+        "name": "Pause Utilities",
+        "picture": "https://extensions.penguinmod.com/images/SharkPool/Pause-Utilities.svg",
+        "description": "Utilities for pausing & unpausing scripts, sprites, and projects. Also allows for running blocks when the project is paused.",
+        "url": "https://extensions.penguinmod.com/extensions/SharkPool/Pause-Utilities.js",
+        "credits": [
+            {
+                "name": "SharkPool-SP.",
+                "url": "https://github.com/SharkPool-SP/"
+            }
+        ]
+    },
+    {
+        "name": "Better Input",
+        "picture": "https://extensions.penguinmod.com/images/SharkPool/BetterInput.svg",
+        "description": "Expansion to the Ask and Wait blocks. Adds custom modals with effects, transitions, buttons, dropdowns, etc.",
+        "url": "https://extensions.penguinmod.com/extensions/SharkPool/BetterInput.js",
+        "credits": [
+            {
+                "name": "SharkPool-SP.",
+                "url": "https://github.com/SharkPool-SP/"
+            }
+        ]
+    },
+    {
+        "name": "Random Utilities",
+        "picture": "https://extensions.penguinmod.com/images/Gen1x/randomutils.png",
+        "description": "Many blocks related to generating random values, including seed-based number generation, true number generation, UUID's, random strings, etc.",
+        "url": "https://extensions.penguinmod.com/extensions/Gen1x/random_utils.js",
+        "credits": [
+            {
+                "name": "G1nX.",
+                "url": "https://scratch.mit.edu/users/G1nX/"
+            }
+        ]
+    },
+    {
         "name": "Particle Tools",
         "picture": "https://extensions.penguinmod.com/images/SharkPool/Particle-Tools.svg",
         "description": "Tools for making particle engines easier.",
@@ -144,21 +192,9 @@
         ]
     },
     {
-        "name": "Spotify API",
-        "picture": "https://extensions.penguinmod.com/images/SharkPool/Spotify.svg",
-        "description": "Fetch Statistics and Information and Play Songs from Spotify.",
-        "url": "https://extensions.penguinmod.com/extensions/SharkPool/Spotify.js",
-        "credits": [
-            {
-                "name": "SharkPool-SP.",
-                "url": "https://github.com/SharkPool-SP/"
-            }
-        ]
-    },
-    {
         "name": "Speech Bubbles",
         "picture": "https://extensions.penguinmod.com/images/SharkPool/Speech-Bubbles.svg",
-        "description": "Customizable Speech Bubbles",
+        "description": "Allows for futher customizable speech bubbles.",
         "url": "https://extensions.penguinmod.com/extensions/SharkPool/Speech-Bubbles.js",
         "credits": [
             {
@@ -168,21 +204,57 @@
         ]
     },
     {
-        "name": "Random Utilities",
-        "picture": "https://extensions.penguinmod.com/images/Gen1x/randomutils.png",
-        "description": "Many blocks related to randomness.\nSome new features are seed-based number generation, true number generation, UUID's, random strings, etc.",
-        "url": "https://extensions.penguinmod.com/extensions/Gen1x/random_utils.js",
+        "name": "PenguinGPT",
+        "picture": "https://extensions.penguinmod.com/images/MubiLop/penguingpt.png",
+        "description": "Talk to ChatGPT! Use models like DALL-E 3, Midjourney, and GPT 4.",
+        "url": "https://extensions.penguinmod.com/extensions/MubiLop/penguingpt.js",
         "credits": [
             {
-                "name": "G1nX.",
-                "url": "https://scratch.mit.edu/users/G1nX/"
+                "name": "MubiLop.",
+                "url": "https://scratch.mit.edu/users/MubiLop/"
+            }
+        ]
+    },
+    {
+        "name": "SoundCloud API",
+        "picture": "https://extensions.penguinmod.com/images/SharkPool/SoundCloud-API.svg",
+        "description": "Fetch Songs and Statistics from SoundCloud.",
+        "url": "https://extensions.penguinmod.com/extensions/SharkPool/SoundCloud-API.js",
+        "credits": [
+            {
+                "name": "SharkPool-SP.",
+                "url": "https://github.com/SharkPool-SP/"
+            }
+        ]
+    },
+    {
+        "name": "Spotify API",
+        "picture": "https://extensions.penguinmod.com/images/SharkPool/Spotify.svg",
+        "description": "Fetch statistics and information from songs, and play samples from Spotify.",
+        "url": "https://extensions.penguinmod.com/extensions/SharkPool/Spotify.js",
+        "credits": [
+            {
+                "name": "SharkPool-SP.",
+                "url": "https://github.com/SharkPool-SP/"
+            }
+        ]
+    },
+    {
+        "name": "PenguinHook",
+        "picture": "https://extensions.penguinmod.com/images/MubiLop/penguinhook.png",
+        "description": "Send Webhook requests, that can be Discord or any type of webhook.",
+        "url": "https://extensions.penguinmod.com/extensions/MubiLop/penguinhook.js",
+        "credits": [
+            {
+                "name": "MubiLop.",
+                "url": "https://scratch.mit.edu/users/MubiLop/"
             }
         ]
     },
     {
         "name": "Tile Grids",
         "picture": "https://extensions.penguinmod.com/images/SharkPool/Tile-Grids.svg",
-        "description": "Place Sprites on Grids.",
+        "description": "Place sprites on grids.",
         "url": "https://extensions.penguinmod.com/extensions/SharkPool/Tile-Grids.js",
         "credits": [
             {
@@ -194,7 +266,7 @@
     {
         "name": "Animations",
         "picture": "https://extensions.penguinmod.com/images/SharkPool/Animations.svg",
-        "description": "Play Animations and Keyframes for your Sprites.",
+        "description": "Play animations and keyframes for your sprites.",
         "url": "https://extensions.penguinmod.com/extensions/SharkPool/Animations.js",
         "credits": [
             {
@@ -216,69 +288,21 @@
         ]
     },
     {
-        "name": "How many lines?",
-        "picture": "https://extensions.penguinmod.com/images/Monochromasity/placeholder-howmanylines.png",
-        "description": "Blocks to determine the amount of new lines in a piece of text.",
-        "url": "https://extensions.penguinmod.com/extensions/Monochromasity/howmanylines.js",
+        "name": "Mathematics",
+        "picture": "https://extensions.penguinmod.com/images/jwklong/mathematics.png",
+        "description": "Complicated maths extension for nerds.",
+        "url": "https://extensions.penguinmod.com/extensions/jwklong/mathematics.js",
         "credits": [
             {
-                "name": "Monochromasity.",
-                "url": "https://github.com/Monochromasity/"
-            }
-        ]
-    },
-    {
-        "name": "Free Servers",
-        "picture": "https://extensions.penguinmod.com/images/WAYLIVES/FreeServersIMG.svg",
-        "description": "Here you can find a free server for your projects. And also check whether it is working now or not.\n\nЗдесь вы можете найти бесплатный сервер для своих проектов. А также проверить, работает он сейчас или нет.",
-        "url": "https://extensions.penguinmod.com/extensions/WAYLIVES/FreeServers.js",
-        "credits": [
-            {
-                "name": "WAYLIVES.",
-                "url": "https://scratch.mit.edu/users/WAYLIVES/"
-            }
-        ]
-    },
-    {
-        "name": "Better Storage",
-        "picture": "https://extensions.penguinmod.com/images/Gen1x/betterstorage.png",
-        "description": "Like PenguinMod's Storage Extension, but with a couple more features, and faster servers.",
-        "url": "https://extensions.penguinmod.com/extensions/Gen1x/better_storage.js",
-        "credits": [
-            {
-                "name": "G1nX.",
-                "url": "https://scratch.mit.edu/users/G1nX/"
-            }
-        ]
-    },
-    {
-        "name": "Mouth Washer",
-        "picture": "https://extensions.penguinmod.com/images/Gen1x/mw-placeholder.png",
-        "description": "Includes many utilities related to cleaning bad words, swearing and profanity.\nThought as an extra layer of security for filtering messages.\n\n(ft. violet and jwklong)",
-        "url": "https://extensions.penguinmod.com/extensions/Gen1x/mouth_washer.js",
-        "credits": [
-            {
-                "name": "G1nX.",
-                "url": "https://scratch.mit.edu/users/G1nX/"
-            }
-        ]
-    },
-    {
-        "name": "All Menus",
-        "picture": "https://extensions.penguinmod.com/images/Lily/AllMenus.svg",
-        "description": "Every dropdown menu for each block, in one extension.",
-        "url": "https://extensions.penguinmod.com/extensions/Lily/AllMenus.js",
-        "credits": [
-            {
-                "name": "LilyMakesThings.",
-                "url": "https://scratch.mit.edu/users/LilyMakesThings/"
+                "name": "jwklong.",
+                "url": "https://github.com/jwklong/"
             }
         ]
     },
     {
         "name": "Font Manager",
         "picture": "https://extensions.penguinmod.com/images/SharkPool/Font-Manager.svg",
-        "description": "Manage, Create, and Delete Fonts.\n(Some Contributions by Ashimee)",
+        "description": "Manage, create, and delete fonts.\n(Some contributions by Ashimee)",
         "url": "https://extensions.penguinmod.com/extensions/SharkPool/Font-Manager.js",
         "credits": [
             {
@@ -312,9 +336,57 @@
         ]
     },
     {
+        "name": "Pang API",
+        "picture": "https://extensions.penguinmod.com/images/SammerLOL/pangapi.png",
+        "description": "Fetch information from the PenguinMod API.",
+        "url": "https://extensions.penguinmod.com/extensions/SammerLOL/pangapi.js",
+        "credits": [
+            {
+                "name": "oc9x97.",
+                "url": "https://github.com/oc9x97/"
+            }
+        ]
+    },
+    {
+        "name": "Discord Auth",
+        "picture": "https://extensions.penguinmod.com/images/NotHouse/DiscordAuth-banner.png",
+        "description": "Login with discord to your projects. Identify users by ID and username in a secure and easy way!",
+        "url": "https://extensions.penguinmod.com/extensions/NotHouse/DiscordAuth.js",
+        "credits": [
+            {
+                "name": "NotHouse.",
+                "url": "https://github.com/NotHouse/"
+            }
+        ]
+    },
+    {
+        "name": "Twitch",
+        "picture": "https://extensions.penguinmod.com/images/bop_tw/Twitch.png",
+        "description": "Communicate with your Twitch Chat on PenguinMod!\n\nPenguinMod is not affiliated with Twitch.",
+        "url": "https://extensions.penguinmod.com/extensions/bop_tw/Twitch.js",
+        "credits": [
+            {
+                "name": "bop_tw.",
+                "url": "https://scratch.mit.edu/users/bop_tw/"
+            }
+        ]
+    },
+    {
+        "name": "TurboWeather",
+        "picture": "https://extensions.penguinmod.com/images/RubyDevs/turboweather.webp",
+        "description": "Show weather and location data for any place in our world. Data that could be used for doxxing is deleted from results.",
+        "url": "https://extensions.penguinmod.com/extensions/RubyDevs/turboweather.js",
+        "credits": [
+            {
+                "name": "RubyDevs.",
+                "url": "https://scratch.mit.edu/users/RubyDevs/"
+            }
+        ]
+    },
+    {
         "name": "CORS Proxy",
         "picture": "https://extensions.penguinmod.com/images/NamelessCat/corsproxy.png",
-        "description": "Accessible CORS Proxies for fetching information",
+        "description": "Accessible CORS Proxies for fetching information with PenguinMod.",
         "url": "https://extensions.penguinmod.com/extensions/NamelessCat/corsproxy.js",
         "credits": [
             {
@@ -348,45 +420,9 @@
         ]
     },
     {
-        "name": "CloudLink",
-        "picture": "https://extensions.penguinmod.com/images/MikeDev101/cloudlink.svg",
-        "description": "A powerful WebSocket extension for Scratch.",
-        "url": "https://extensions.penguinmod.com/extensions/MikeDev101/cloudlink.js",
-        "credits": [
-            {
-                "name": "MikeDev101.",
-                "url": "https://github.com/MikeDev101/"
-            }
-        ]
-    },
-    {
-        "name": "Mathematics",
-        "picture": "https://extensions.penguinmod.com/images/jwklong/mathematics.png",
-        "description": "Complicated maths extension for nerds.",
-        "url": "https://extensions.penguinmod.com/extensions/jwklong/mathematics.js",
-        "credits": [
-            {
-                "name": "jwklong.",
-                "url": "https://github.com/jwklong/"
-            }
-        ]
-    },
-    {
-        "name": "Twitch",
-        "picture": "https://extensions.penguinmod.com/images/bop_tw/Twitch.png",
-        "description": "Communicate with your Twitch Chat on PenguinMod!\n\nPenguinMod is not affiliated with Twitch.",
-        "url": "https://extensions.penguinmod.com/extensions/bop_tw/Twitch.js",
-        "credits": [
-            {
-                "name": "bop_tw.",
-                "url": "https://scratch.mit.edu/users/bop_tw/"
-            }
-        ]
-    },
-    {
         "name": "Project Page",
         "picture": "https://extensions.penguinmod.com/images/jwklong/projectpage.png",
-        "description": "How annoying can a extension possibly be? Modify and effect the project page from the code.",
+        "description": "Modify and affect the studio project page from the code. How annoying can an extension possibly be?",
         "url": "https://extensions.penguinmod.com/extensions/jwklong/projectpage.js",
         "credits": [
             {
@@ -396,9 +432,21 @@
         ]
     },
     {
+        "name": "All Menus",
+        "picture": "https://extensions.penguinmod.com/images/Lily/AllMenus.svg",
+        "description": "Every dropdown menu for each block, in one extension.",
+        "url": "https://extensions.penguinmod.com/extensions/Lily/AllMenus.js",
+        "credits": [
+            {
+                "name": "LilyMakesThings.",
+                "url": "https://scratch.mit.edu/users/LilyMakesThings/"
+            }
+        ]
+    },
+    {
         "name": "Counter++",
         "picture": "https://extensions.penguinmod.com/images/MrRedstonia/counterplusplus.png",
-        "description": "Count anything, at any time, in Scratch!",
+        "description": "Count anything, at any time, in PenguinMod!",
         "url": "https://extensions.penguinmod.com/extensions/MrRedstonia/counterplusplus.js",
         "credits": [
             {
@@ -408,26 +456,38 @@
         ]
     },
     {
-        "name": "Pang API",
-        "picture": "https://extensions.penguinmod.com/images/SammerLOL/pangapi.png",
-        "description": "Fetch information from the PenguinMod API.",
-        "url": "https://extensions.penguinmod.com/extensions/SammerLOL/pangapi.js",
+        "name": "How many lines?",
+        "picture": "https://extensions.penguinmod.com/images/Monochromasity/placeholder-howmanylines.png",
+        "description": "Blocks to determine the amount of new lines in a piece of text.",
+        "url": "https://extensions.penguinmod.com/extensions/Monochromasity/howmanylines.js",
         "credits": [
             {
-                "name": "oc9x97.",
-                "url": "https://github.com/oc9x97/"
+                "name": "Monochromasity.",
+                "url": "https://github.com/Monochromasity/"
             }
         ]
     },
     {
-        "name": "Scope Variable",
-        "picture": "https://extensions.penguinmod.com/images/0znzw/ScopeVars.png",
-        "description": "Manage your variables in block like structure.",
-        "url": "https://extensions.penguinmod.com/extensions/0znzw/ScopeVars.js",
+        "name": "Free Servers",
+        "picture": "https://extensions.penguinmod.com/images/WAYLIVES/FreeServersIMG.svg",
+        "description": "Here you can find a free server for your projects. And also check whether it is working now or not.",
+        "url": "https://extensions.penguinmod.com/extensions/WAYLIVES/FreeServers.js",
         "credits": [
             {
-                "name": "Ashimee.",
-                "url": "https://github.com/Ashimee/"
+                "name": "WAYLIVES.",
+                "url": "https://scratch.mit.edu/users/WAYLIVES/"
+            }
+        ]
+    },
+    {
+        "name": "Text To Speech: Redone",
+        "picture": "https://extensions.penguinmod.com/images/PuzzlingGGG/TTSR.png",
+        "description": "Generate better TTS! Made using TTS Tool API!",
+        "url": "https://extensions.penguinmod.com/extensions/PuzzlingGGG/ttsr.js",
+        "credits": [
+            {
+                "name": "puzzlingGGG.",
+                "url": "https://scratch.mit.edu/users/puzzlingGGG/"
             }
         ]
     }
